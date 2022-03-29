@@ -30,11 +30,11 @@ body header{
     align-items: center;
     margin: 77px 190px;
 }
-body header ul{
+body header nav ul{
     display: flex;
 }
 
-body header ul li{
+body header nav ul li{
     list-style-type: none;
     margin: 0px 28px;
 
@@ -123,8 +123,6 @@ body main .descripcion .lista div div h5{
     font-weight: bold;
     font-size: 19px;
     margin: 5px 0px;
-
-
 }
 
 body main .descripcion .lista div div p{
@@ -134,3 +132,49 @@ body main .descripcion .lista div div p{
     font-size: 16.2984px;
     line-height: 26px;
 }
+
+/* Inicio Seccion 3 Opiniones*/
+
+body main .opiniones{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 71px;
+    align-items: center;/*no estoy seguro*/
+}
+
+body main .opiniones h4{
+    color: #242E53;
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    margin: 74px 0px;
+}
+
+body main .opiniones article {
+    display: flex;
+    background-color: #FAFAFA;
+}
+
+body main .opiniones article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*no estoy seguro*/
+    justify-content: space-evenly;
+}
+
+body main .opiniones article div span{
+    color: #3F4868;
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    margin: 21px 0px;
+}
+body main .opiniones article div p{
+    color: #B9B9C1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 156.6%;
+    padding: 0px 30px;
+}
+
+
