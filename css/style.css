@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.botonGetStarted{
+    color: #FFFFFF;
+    background-color: #F3603B;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 13px;
+    color: #242E52;
+}
+body header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 77px 190px;
+}
+body header ul{
+    display: flex;
+}
+
+body header ul li{
+    list-style-type: none;
+    margin: 0px 28px;
+
+}
+/* portada */
+body main .portada{
+    display: flex;
+    justify-content: center;
+    margin: 0px 165px;
+}
+/* parte texto de la portada */
+body main .portada .fraseHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 50%;
+}
+
+/* configuracion del titulo portada */
+body main .portada .fraseHome h4{
+    color: #232C50;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 66px;
+
+}
+/* Configuracion del parrafo */
+body main .portada .fraseHome p{
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 157.1%;
+}
+
+/* Inicio SECCION 2*/
+body main .descripcion{
+    display: flex;
+    margin: 0px 165px;
+    justify-content: center;
+}
+
+body main .descripcion .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+
+}
+
+body main .descripcion .about h4{
+    color: #232851;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 114.6%;
+}
+
+body main .descripcion .about p{
+    margin: 36px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.1%;
+}
+body main .descripcion .lista{
+    width: 50%;
+
+}
+body main .descripcion .lista div{
+    display: flex;
+}
+body main .descripcion .lista div button{
+    align-self: flex-start;
+    color: white;
+    background-color: #F3603B;
+    padding: 10px 25px;
+    margin: 0px 23px;
+    border-radius: 30px;
+    border: none;
+}
+body main .descripcion .lista div div{
+    display: flex;
+    flex-direction: column;
+}
+
+body main .descripcion .lista div div h5{
+    color: #323851;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 5px 0px;
+
+
+}
+
+body main .descripcion .lista div div p{
+    margin: 8px 0px;
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+}
