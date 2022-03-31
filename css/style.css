@@ -167,14 +167,144 @@ body main .opiniones article div span{
     font-weight: 700;
     font-size: 16.0714px;
     line-height: 156.6%;
-    margin: 21px 0px;
 }
 body main .opiniones article div p{
     color: #B9B9C1;
     font-weight: 600;
     font-size: 16px;
     line-height: 156.6%;
-    padding: 0px 30px;
+    padding: 21px 30px 39px 30px;
 }
 
+body main .opiniones article div img{
+    position: relative;
+    bottom: 25%;
+}
 
+body main .opiniones button{
+    margin: 57px 0px;
+}
+
+body main .cierreMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3613C;
+    
+    width: 100%;
+}
+
+body main .cierreMain p{
+    margin: 64px 165px 64px 165px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    width: 50%;
+}
+
+body main .cierreMain .boton button{
+    color: #F3603B;
+    background-color: #FFFFFF;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    margin: 90px 165px;
+}
+
+body main .cierreMain .boton{
+    width: 50%;
+}
+
+body footer{
+    background-color: #1E1E26;
+}
+body footer .piePagina{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 165px;
+}
+
+body footer .piePagina .logoRedes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    width: 33%;
+}
+
+body footer .piePagina .logoRedes .logo{
+    /* margin-top: 67px; */
+}
+
+body footer .piePagina .logoRedes div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+body footer .piePagina .listado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33%;
+    height: 200px;
+    margin: 53px 0px;
+}
+
+body footer .piePagina .listado span{
+    color:#FFFFFF;
+    margin: 12px 0px;
+}
+
+/*posicion formulario*/
+body footer .piePagina .subscripcion{
+    display: flex;
+    align-items: center;
+}
+
+/*estilos formulario*/
+.subscripcion form{
+    width: 201px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*estilos texto formulario*/
+.subscripcion form input{
+    font-weight: 600;
+    font-size: 13.1806px;
+    line-height: 19px;
+    margin: 12px 10px;
+    color: #A0A0A0;
+    border: none;
+}
+
+/*estilos boton GO del formulario*/
+body footer div button {
+    border-radius: 50px;
+    background-color: #f3603b;
+    color: #ffffff;
+    text-decoration: none;
+    width: 134px;
+    height: 44px;
+    border: none;
+}
+
+/*copyrigth*/
+body footer .copyright{
+    color: #8C8C94;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+    text-align: right;
+    padding-right: 170px;
+    position: relative;
+    bottom: 80px;
+}
