@@ -3,12 +3,23 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    /*border: 2px solid red;*/
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .botonGetStarted{
+    color: #FFFFFF;
+    background-color: #F3603B;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+}
+
+.botonGetStartedNav{
     color: #FFFFFF;
     background-color: #F3603B;
     width: 134px;
@@ -28,22 +39,27 @@ body header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 77px 190px;
+    margin: 8.2vh 9.8vw
 }
-body header nav ul{
+
+.burger{
+    display: none;
+}
+
+body header nav .nav-ul{
     display: flex;
 }
 
-body header nav ul li{
+body header nav .nav-ul li{
     list-style-type: none;
     margin: 0px 28px;
 
 }
-/* portada */
+/* Inicio SECCION 1 Portada */
 body main .portada{
     display: flex;
     justify-content: center;
-    margin: 0px 165px;
+    margin: 0vh 8.63vw;
 }
 /* parte texto de la portada */
 body main .portada .fraseHome{
@@ -57,8 +73,8 @@ body main .portada .fraseHome{
 /* configuracion del titulo portada */
 body main .portada .fraseHome h4{
     color: #232C50;
-    font-weight: 700;
-    font-size: 58px;
+    font-weight:700;
+    font-size: 60px;
     line-height: 66px;
 
 }
@@ -69,11 +85,12 @@ body main .portada .fraseHome p{
     line-height: 157.1%;
 }
 
-/* Inicio SECCION 2*/
+/* -----Inicio SECCION 2 Descripcion---- */
 body main .descripcion{
     display: flex;
-    margin: 0px 165px;
+    margin: 0vh 8.63vw;
     justify-content: center;
+    
 }
 
 body main .descripcion .about{
@@ -138,7 +155,7 @@ body main .descripcion .lista div div p{
 body main .opiniones{
     display: flex;
     flex-direction: column;
-    margin: 0px 71px;
+    margin: 0vh 3.69vw;
     align-items: center;/*no estoy seguro*/
 }
 
@@ -185,17 +202,17 @@ body main .opiniones button{
     margin: 57px 0px;
 }
 
+/* ----- Inicio SECCION 4 CierreMain*/
 body main .cierreMain {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F3613C;
-    
-    width: 100%;
+    width: 100%;    
 }
 
 body main .cierreMain p{
-    margin: 64px 165px 64px 165px;
+    padding: 6.83vh 8.59vw;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 40px;
@@ -218,14 +235,16 @@ body main .cierreMain .boton{
     width: 50%;
 }
 
+/* -----Inicio Footer-----*/
+
 body footer{
     background-color: #1E1E26;
 }
 body footer .piePagina{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0px 165px;
+    /* margin: 0px 165px; */
+    margin: 0vh 8.59vw;
 }
 
 body footer .piePagina .logoRedes{
@@ -234,10 +253,6 @@ body footer .piePagina .logoRedes{
     align-items:center;
     justify-content: space-evenly;
     width: 33%;
-}
-
-body footer .piePagina .logoRedes .logo{
-    /* margin-top: 67px; */
 }
 
 body footer .piePagina .logoRedes div{
@@ -307,4 +322,204 @@ body footer .copyright{
     padding-right: 170px;
     position: relative;
     bottom: 80px;
+}
+/*Hover y animacion sobre logos*/
+.face:hover, .youtube:hover, .twitter:hover, .pint:hover, .insta:hover, .logo:hover{
+    -webkit-transform: scale(2);
+    transform: scale(2)
+} 
+
+/*-----Inicio Seccion Movil 375px -----*/
+
+@media (max-width: 450px) {
+    /*Boton Hamburguesa para pantallas 375px*/
+    .burger{
+        display: block;
+    }
+    .navegacion{
+        display: none;
+    }
+    .botonGetStartedNav{
+        display: none;
+    }
+    /* ---- Inicio Seccion 1 portada----- */
+    body main .portada{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    body main .portada .estadisticas img{
+        width: 100%;
+    }
+
+    body main .portada .fraseHome{
+        
+        align-items: center;
+        width: 100%;
+    }
+
+    /*texto cambio movile*/
+    body main .portada .fraseHome h4{
+        font-weight:700;
+        font-size: 25px;
+        line-height: 40px;
+        text-align:center;
+    
+    }
+    body main .portada .fraseHome p{
+        font-weight: 500;
+        font-size: 13.5584px;
+        line-height: 157.1%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    /* -----Inicio SECCION 2-----*/
+    body main .descripcion{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    body main .descripcion .about{
+        width: 100%;
+    }
+
+    body main .descripcion .about h4{
+        margin-top: 25px;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    body main .descripcion .about p{
+        font-size: 13.55px;  
+        text-align: center; 
+    }
+    body main .descripcion .lista{
+        width: 100%;
+    }
+
+    body main .descripcion .lista div div{
+        width: 255px;
+        position: relative;
+        right: 10px;
+    }
+
+    body main .descripcion .lista div div p{
+        margin: 0px 0px;
+        font-size: 12.2984px;
+        position: relative;
+        right: 60px;
+        width: 77vw;
+        text-align: center;
+    }
+    body main .descripcion .lista div button{
+        padding: 10px 25px;
+        margin: 0px 0px;
+        z-index: 1;
+    }
+    body main .descripcion .lista div div h5{
+        font-size: 12px;
+        height: 33px;
+        margin: 0px 0px;
+        background-color: #f7cdc3;
+        padding: 9px 0px 0px 15px;
+    } 
+    
+    /* -----Inicio SECCION 3 Opiniones----- */
+
+    body main .opiniones article div:nth-child(2n+1){
+        display: none;
+    }
+
+    body main .opiniones h4{
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+    }
+    body main .opiniones article div p{
+        font-weight: 500;
+        font-size: 13.5584px;
+        line-height: 157.1%;
+        text-align: center;
+    }
+    
+    body main .opiniones article div img{
+        width: 70px;
+        height: 70px;
+        position: relative;
+        bottom: 10%;
+    }
+
+    /* -----Inicio SECCION 4 CierreMain----- */
+
+    body main .cierreMain{
+        flex-direction: column;
+    }
+
+    body main .cierreMain p{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    body main .cierreMain .boton{
+        width: 100%;
+    }
+
+    body main .cierreMain .boton button{        
+        margin: 5vh 30vw;
+    }
+    
+    /* -----Pie DE PAGINA Footer----- */
+    body footer .piePagina{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    body footer .piePagina .subscripcion{
+        margin: 30px 0px;
+    }
+
+    /*estilos boton GO del formulario*/
+    body footer div button {
+        width: 80px;
+    }
+
+    body footer .piePagina .listado {
+        width: 100%;
+        align-content: space-around;
+    }
+    
+    body footer .piePagina .listado span{
+        color:#FFFFFF;
+        margin: 12px 0px;
+    }
+    
+    body footer .piePagina .logoRedes{
+        width: 100%;
+    }
+    
+    body footer .piePagina .logoRedes .logo{
+        margin: 25px;
+        order: 1;
+    }
+    
+    body footer .piePagina .logoRedes div{
+        width: 100%;
+    }
+
+    /* -----Copyrigth ----- */
+    body footer .copyright{
+        text-align: center;
+        padding-right: 0px;
+        position: static;
+        height:30px;
+    }
+
+
 }
